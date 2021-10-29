@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title> Word Verb </title>
+    <link href=“https://fonts.googleapis.com/css2?family=Nunito:wght@300;400;700&display=swap” rel=“stylesheet”>
+
+    <link rel="stylesheet" href="css/animate.css"/>
+    <link rel="stylesheet" href="css/style.css"/>
+  </head>
+  <body>
+
+    <!-- <section>
+      <h1>Verbs</h1>
+
+      <p>
+        A verb is a word that describes an action. Everyday you do a ton of different actions. 
+        For example you eat, sleep, drink, play, breathe, walk, these are all examples of verbs!
+      </p>
+      
+      <p>
+        What about what you did yesterday? What are you doing right now? What are you going to do tomorrow? These all describe time, there's past, present and future. 
+        When we want to change a verb to describe an action that took place at a certain time we change the verb's "tense." How do we change a verb to be the correct tense? 
+        Here we will walk through how to do it and some of the exceptions.
+      </p>
+
+      <div>
+        <h2>Past</h2>
+        <p></p>
+      </div>
+      <div>
+        <h2>Present</h2>
+        <p></p>
+      </div>
+      <div>
+        <h2>Future</h2>
+        <p></p>
+      </div>
+      <div>
+        <h2>Irregular</h2>
+        <p></p>
+      </div>
+    </section> -->
+
+    <section id="verb-game">
+      <div class="logo">
+        <img src="./assets/word-verb.png" />
+      </div>
+      <div class="gameModeSelector">
+        <div class="overlay"></div>
+        <h1 id="modal-text" class="game-title"> Ready?</h1>
+        <label for="verbModes">Select the type of verb you want to test</label>
+  
+        <select name="verbModes" id="verbModes">
+          <option value="verbBase">Verb Bases</option>
+          <option value="pastTense">Past Tense Verbs</option>
+          <option value="pastParticiple">Past Participle Verbs</option>
+        </select>
+        
+        <button id="selectVerbMode"> Let's Play! </button>
+      </div>
+
+      <div class="game-wrapper hide">
+          <span id="verb-type"></span>
+          <span id="score"></span>
+          <span id="score-addition"></span>
+
+          <span id="verb-tense"></span>
+
+          <!-- "strikes" section -->
+          <div class="strikes">
+            <div class="strikes-wrapper">
+              <div class="strike-box">
+                <img class ="strike animated hide" src="./assets/x.png" />
+              </div>
+              <div class="strike-box">
+                <img class ="strike animated hide" src="./assets/x.png" />
+              </div>
+              <div class="strike-box">
+                <img class ="strike animated hide" src="./assets/x.png" />
+              </div>
+            </div>
+          </div> 
+          <!-- END of "strikes" section -->
+
+          <div class="countdown">
+            <span id="time" class="time">00:00.00</span>
+          </div>
+
+          <div class="verb-image-wrapper">
+            <img class="verb-img" src="" />
+          </div>
+          <div class="flash-card slideInUp animated"> </div>
+
+          <div class="input-section">
+            <div class="submit-input">
+              <input id="userInput" class="text-here" type="text" placeholder="Type word here" autofocus/>
+              <button id="submitWord" class="submit"> <img class="check-icon" /> Submit </button>
+            </div>
+          </div> 
+        </div>
+
+
+  
+      </div>
+    </section>
+
+    <!--JS files linked below -->
+      <script src="js/app.js"></script>
+      <script src="js/verbCheck.js"></script>
+  </body>
+</html>
